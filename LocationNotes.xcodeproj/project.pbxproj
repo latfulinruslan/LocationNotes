@@ -8,22 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		4416B88F219EB997007219AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4416B88E219EB997007219AC /* AppDelegate.swift */; };
-		4416B891219EB997007219AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4416B890219EB997007219AC /* ViewController.swift */; };
 		4416B894219EB997007219AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4416B892219EB997007219AC /* Main.storyboard */; };
 		4416B897219EB997007219AC /* LocationNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4416B895219EB997007219AC /* LocationNotes.xcdatamodeld */; };
 		4416B899219EB999007219AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4416B898219EB999007219AC /* Assets.xcassets */; };
 		4416B89C219EB999007219AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4416B89A219EB999007219AC /* LaunchScreen.storyboard */; };
+		4416B8AB219EC001007219AC /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4416B8A3219EC001007219AC /* Location+CoreDataClass.swift */; };
+		4416B8AC219EC001007219AC /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4416B8A4219EC001007219AC /* Location+CoreDataProperties.swift */; };
+		4416B8AD219EC001007219AC /* ImageNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4416B8A5219EC001007219AC /* ImageNote+CoreDataClass.swift */; };
+		4416B8AE219EC001007219AC /* ImageNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4416B8A6219EC001007219AC /* ImageNote+CoreDataProperties.swift */; };
+		4416B8AF219EC001007219AC /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4416B8A7219EC001007219AC /* Note+CoreDataClass.swift */; };
+		4416B8B0219EC001007219AC /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4416B8A8219EC001007219AC /* Note+CoreDataProperties.swift */; };
+		4416B8B1219EC001007219AC /* Folder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4416B8A9219EC001007219AC /* Folder+CoreDataClass.swift */; };
+		4416B8B2219EC001007219AC /* Folder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4416B8AA219EC001007219AC /* Folder+CoreDataProperties.swift */; };
+		4416B8B5219EC101007219AC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4416B8B4219EC101007219AC /* CoreDataManager.swift */; };
+		442E27F221ADD96C0004AC03 /* SelectFolderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442E27F121ADD96C0004AC03 /* SelectFolderController.swift */; };
+		44D061D621A4577300BE2598 /* FoldersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D061D521A4577300BE2598 /* FoldersController.swift */; };
+		44D061D821A47B2F00BE2598 /* FolderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D061D721A47B2F00BE2598 /* FolderController.swift */; };
+		44D061DA21A4891C00BE2598 /* NoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D061D921A4891C00BE2598 /* NoteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4416B88B219EB997007219AC /* LocationNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4416B88E219EB997007219AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4416B890219EB997007219AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4416B893219EB997007219AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4416B896219EB997007219AC /* LocationNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocationNotes.xcdatamodel; sourceTree = "<group>"; };
 		4416B898219EB999007219AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4416B89B219EB999007219AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4416B89D219EB999007219AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4416B8A3219EC001007219AC /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4416B8A4219EC001007219AC /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4416B8A5219EC001007219AC /* ImageNote+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageNote+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4416B8A6219EC001007219AC /* ImageNote+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4416B8A7219EC001007219AC /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4416B8A8219EC001007219AC /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4416B8A9219EC001007219AC /* Folder+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4416B8AA219EC001007219AC /* Folder+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4416B8B4219EC101007219AC /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		442E27F121ADD96C0004AC03 /* SelectFolderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFolderController.swift; sourceTree = "<group>"; };
+		44D061D521A4577300BE2598 /* FoldersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersController.swift; sourceTree = "<group>"; };
+		44D061D721A47B2F00BE2598 /* FolderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderController.swift; sourceTree = "<group>"; };
+		44D061D921A4891C00BE2598 /* NoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +80,36 @@
 		4416B88D219EB997007219AC /* LocationNotes */ = {
 			isa = PBXGroup;
 			children = (
+				4416B8B3219EC021007219AC /* Model */,
 				4416B88E219EB997007219AC /* AppDelegate.swift */,
-				4416B890219EB997007219AC /* ViewController.swift */,
+				44D061D521A4577300BE2598 /* FoldersController.swift */,
+				44D061D721A47B2F00BE2598 /* FolderController.swift */,
+				44D061D921A4891C00BE2598 /* NoteController.swift */,
+				442E27F121ADD96C0004AC03 /* SelectFolderController.swift */,
 				4416B892219EB997007219AC /* Main.storyboard */,
 				4416B898219EB999007219AC /* Assets.xcassets */,
 				4416B89A219EB999007219AC /* LaunchScreen.storyboard */,
 				4416B89D219EB999007219AC /* Info.plist */,
-				4416B895219EB997007219AC /* LocationNotes.xcdatamodeld */,
 			);
 			path = LocationNotes;
+			sourceTree = "<group>";
+		};
+		4416B8B3219EC021007219AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4416B8B4219EC101007219AC /* CoreDataManager.swift */,
+				4416B895219EB997007219AC /* LocationNotes.xcdatamodeld */,
+				4416B8A3219EC001007219AC /* Location+CoreDataClass.swift */,
+				4416B8A4219EC001007219AC /* Location+CoreDataProperties.swift */,
+				4416B8A5219EC001007219AC /* ImageNote+CoreDataClass.swift */,
+				4416B8A6219EC001007219AC /* ImageNote+CoreDataProperties.swift */,
+				4416B8A7219EC001007219AC /* Note+CoreDataClass.swift */,
+				4416B8A8219EC001007219AC /* Note+CoreDataProperties.swift */,
+				4416B8A9219EC001007219AC /* Folder+CoreDataClass.swift */,
+				4416B8AA219EC001007219AC /* Folder+CoreDataProperties.swift */,
+			);
+			name = Model;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +183,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4416B891219EB997007219AC /* ViewController.swift in Sources */,
+				4416B8AB219EC001007219AC /* Location+CoreDataClass.swift in Sources */,
+				44D061D621A4577300BE2598 /* FoldersController.swift in Sources */,
 				4416B88F219EB997007219AC /* AppDelegate.swift in Sources */,
+				44D061D821A47B2F00BE2598 /* FolderController.swift in Sources */,
+				4416B8AD219EC001007219AC /* ImageNote+CoreDataClass.swift in Sources */,
+				4416B8B2219EC001007219AC /* Folder+CoreDataProperties.swift in Sources */,
 				4416B897219EB997007219AC /* LocationNotes.xcdatamodeld in Sources */,
+				4416B8B5219EC101007219AC /* CoreDataManager.swift in Sources */,
+				4416B8AF219EC001007219AC /* Note+CoreDataClass.swift in Sources */,
+				4416B8AC219EC001007219AC /* Location+CoreDataProperties.swift in Sources */,
+				4416B8B1219EC001007219AC /* Folder+CoreDataClass.swift in Sources */,
+				442E27F221ADD96C0004AC03 /* SelectFolderController.swift in Sources */,
+				44D061DA21A4891C00BE2598 /* NoteController.swift in Sources */,
+				4416B8AE219EC001007219AC /* ImageNote+CoreDataProperties.swift in Sources */,
+				4416B8B0219EC001007219AC /* Note+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +280,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -277,6 +335,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -292,9 +351,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = RUS.LocationNotes;
+				PRODUCT_BUNDLE_IDENTIFIER = RUS.LocationNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -309,9 +368,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = RUS.LocationNotes;
+				PRODUCT_BUNDLE_IDENTIFIER = RUS.LocationNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
