@@ -45,9 +45,9 @@ class FoldersController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        LocationManager.sharedInstance.requestAuthorization()
     }
+    
 
     // MARK: - Table view data source
 

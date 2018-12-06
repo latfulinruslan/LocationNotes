@@ -22,6 +22,8 @@
 		4416B8B2219EC001007219AC /* Folder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4416B8AA219EC001007219AC /* Folder+CoreDataProperties.swift */; };
 		4416B8B5219EC101007219AC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4416B8B4219EC101007219AC /* CoreDataManager.swift */; };
 		442E27F221ADD96C0004AC03 /* SelectFolderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442E27F121ADD96C0004AC03 /* SelectFolderController.swift */; };
+		44A972C221B71EAF0025042B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A972C121B71EAF0025042B /* LocationManager.swift */; };
+		44A972C421B72BF50025042B /* NoteMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A972C321B72BF50025042B /* NoteMapController.swift */; };
 		44D061D621A4577300BE2598 /* FoldersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D061D521A4577300BE2598 /* FoldersController.swift */; };
 		44D061D821A47B2F00BE2598 /* FolderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D061D721A47B2F00BE2598 /* FolderController.swift */; };
 		44D061DA21A4891C00BE2598 /* NoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D061D921A4891C00BE2598 /* NoteController.swift */; };
@@ -45,6 +47,8 @@
 		4416B8AA219EC001007219AC /* Folder+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4416B8B4219EC101007219AC /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		442E27F121ADD96C0004AC03 /* SelectFolderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFolderController.swift; sourceTree = "<group>"; };
+		44A972C121B71EAF0025042B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		44A972C321B72BF50025042B /* NoteMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteMapController.swift; sourceTree = "<group>"; };
 		44D061D521A4577300BE2598 /* FoldersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersController.swift; sourceTree = "<group>"; };
 		44D061D721A47B2F00BE2598 /* FolderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderController.swift; sourceTree = "<group>"; };
 		44D061D921A4891C00BE2598 /* NoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteController.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 				44D061D721A47B2F00BE2598 /* FolderController.swift */,
 				44D061D921A4891C00BE2598 /* NoteController.swift */,
 				442E27F121ADD96C0004AC03 /* SelectFolderController.swift */,
+				44A972C321B72BF50025042B /* NoteMapController.swift */,
 				4416B892219EB997007219AC /* Main.storyboard */,
 				4416B898219EB999007219AC /* Assets.xcassets */,
 				4416B89A219EB999007219AC /* LaunchScreen.storyboard */,
@@ -95,6 +100,16 @@
 			sourceTree = "<group>";
 		};
 		4416B8B3219EC021007219AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44A972C121B71EAF0025042B /* LocationManager.swift */,
+				44A972C021B71E6A0025042B /* CoreData */,
+			);
+			name = Model;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		44A972C021B71E6A0025042B /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
 				4416B8B4219EC101007219AC /* CoreDataManager.swift */,
@@ -108,8 +123,7 @@
 				4416B8A9219EC001007219AC /* Folder+CoreDataClass.swift */,
 				4416B8AA219EC001007219AC /* Folder+CoreDataProperties.swift */,
 			);
-			name = Model;
-			path = "New Group";
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,9 +198,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4416B8AB219EC001007219AC /* Location+CoreDataClass.swift in Sources */,
+				44A972C421B72BF50025042B /* NoteMapController.swift in Sources */,
 				44D061D621A4577300BE2598 /* FoldersController.swift in Sources */,
 				4416B88F219EB997007219AC /* AppDelegate.swift in Sources */,
 				44D061D821A47B2F00BE2598 /* FolderController.swift in Sources */,
+				44A972C221B71EAF0025042B /* LocationManager.swift in Sources */,
 				4416B8AD219EC001007219AC /* ImageNote+CoreDataClass.swift in Sources */,
 				4416B8B2219EC001007219AC /* Folder+CoreDataProperties.swift in Sources */,
 				4416B897219EB997007219AC /* LocationNotes.xcdatamodeld in Sources */,

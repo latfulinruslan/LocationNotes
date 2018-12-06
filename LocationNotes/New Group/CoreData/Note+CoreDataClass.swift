@@ -50,6 +50,42 @@ public class Note: NSManagedObject {
         }
     }
     
+    var actualLocation: LocationCoordinate?{
+        get {
+            if self.location == nil{
+                return nil
+            } else {
+                return LocationCoordinate(lat: self.location!.lat, lon: self.location!.lon)
+            }
+        }
+        set {
+            if newValue == nil && self.location != nil{
+                // delete location from note
+                CoreDataManager.sharedInstance.managedObjectContext.delete(self.location!)
+            }
+            if newValue != nil && self.location != nil{
+                // update location in note
+                self.location?.lat = newValue!.lat
+                self.location?.lon = newValue!.lon
+            }
+            if newValue != nil && self.location == nil{
+                // creat e location to note
+                let newLocation = Location(context: CoreDataManager.sharedInstance.managedObjectContext)
+                newLocation.lat = newValue!.lat
+                newLocation.lon = newValue!.lon
+                
+                self.location = newLocation
+            }
+        }
+    }
+    
+    func addCurrentLocation(){
+        LocationManager.sharedInstance.getCurrentLocation { (location) in
+            self.actualLocation = location
+            print("get new location: \(location)")
+        }
+    }
+    
     func addImage(image: UIImage){
         let imageNote = ImageNote(context: CoreDataManager.sharedInstance.managedObjectContext)
         
@@ -58,11 +94,11 @@ public class Note: NSManagedObject {
     }
     
     
-    func addLocation(latitude: Double, lontitude: Double){
+    func addLocation(latitude: Double, longtitude: Double){
         let location = Location(context: CoreDataManager.sharedInstance.managedObjectContext)
         
         location.lat = latitude
-        location.lon = lontitude
+        location.lon = longtitude
         
         self.location = location
     }
