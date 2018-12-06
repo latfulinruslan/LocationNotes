@@ -35,6 +35,7 @@ class NoteMapController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+       
         mapView.delegate = self
         if note?.actualLocation != nil{
             mapView.addAnnotation(NoteAnnotation(note: note!))
@@ -47,7 +48,21 @@ class NoteMapController: UIViewController {
 extension NoteMapController: MKMapViewDelegate{
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?{
         let pin = MKPinAnnotationView(annotation: annotation, reuseIdentifier: nil)
+        
         pin.animatesDrop = true
+        pin.isDraggable = true
+    
         return pin
     }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, didChange newState: MKAnnotationView.DragState, fromOldState oldState: MKAnnotationView.DragState){
+        if newState == .ending{
+            let newLocation = LocationCoordinate(lat: (view.annotation?.coordinate.latitude)!, lon: (view.annotation?.coordinate.longitude)!)
+            note?.actualLocation = newLocation
+            CoreDataManager.sharedInstance.saveContext()
+        }
+        print("change location")
+        
+    }
+    
 }
