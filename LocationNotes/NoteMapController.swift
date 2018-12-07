@@ -41,8 +41,28 @@ class NoteMapController: UIViewController {
             mapView.addAnnotation(NoteAnnotation(note: note!))
             mapView.centerCoordinate = CLLocationCoordinate2D(latitude: note!.actualLocation!.lat, longitude: note!.actualLocation!.lon)
         }
+        
+        let ltgr = UILongPressGestureRecognizer(target: self, action: #selector(handleLongTap))
+        mapView.gestureRecognizers = [ltgr]
     }
-
+    
+    func handleLongTap(recognizer: UIGestureRecognizer) {
+        if recognizer.state != .began {
+            return
+        }
+        
+        let point = recognizer.location(in: mapView)
+        let convertLocation = mapView.convert(point, toCoordinateFrom: mapView)
+        
+        
+        note?.actualLocation = LocationCoordinate(lat: convertLocation.latitude, lon: convertLocation.longitude)
+        
+        CoreDataManager.sharedInstance.saveContext()
+        
+        mapView.removeAnnotations(mapView.annotations)
+        mapView.addAnnotation(NoteAnnotation(note: note!))
+        
+    }
 }
 
 extension NoteMapController: MKMapViewDelegate{
@@ -61,8 +81,6 @@ extension NoteMapController: MKMapViewDelegate{
             note?.actualLocation = newLocation
             CoreDataManager.sharedInstance.saveContext()
         }
-        print("change location")
-        
     }
     
 }
