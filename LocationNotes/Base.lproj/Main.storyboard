@@ -325,7 +325,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="sp9-U9-h9x" kind="show" identifier=" " id="oJ0-AI-GvF"/>
+                                            <segue destination="sp9-U9-h9x" kind="show" identifier="goToMap" id="oJ0-AI-GvF"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
