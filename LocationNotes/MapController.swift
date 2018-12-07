@@ -16,15 +16,6 @@ class MapController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        loadMapView()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        loadMapView()
-    }
-    
-    func loadMapView(){
         mapView.delegate = self
         
         for note in notes {
@@ -33,9 +24,18 @@ class MapController: UIViewController {
             }
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        mapView.removeAnnotations(mapView.annotations)
+        
+        for note in notes {
+            if note.actualLocation != nil{
+                mapView.addAnnotation(NoteAnnotation(note: note))
+            }
+        }
+    }
 }
-
-
 
 
 extension MapController: MKMapViewDelegate{
@@ -48,5 +48,14 @@ extension MapController: MKMapViewDelegate{
         pin.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
         
         return pin
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl){
+        let selectedNotePin = (view.annotation as! NoteAnnotation).note
+        
+        let noteController = storyboard?.instantiateViewController(withIdentifier: "noteSID") as! NoteController
+        noteController.note = selectedNotePin
+        
+        navigationController?.pushViewController(noteController, animated: true)
     }
 }

@@ -219,7 +219,7 @@
         <!--Name note-->
         <scene sceneID="KHy-uc-Xlw">
             <objects>
-                <tableViewController id="8Q6-oY-dYD" customClass="NoteController" customModule="LocationNotes" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="noteSID" id="8Q6-oY-dYD" customClass="NoteController" customModule="LocationNotes" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="JB0-mg-Iel">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
