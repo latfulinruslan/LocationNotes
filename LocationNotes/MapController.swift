@@ -17,6 +17,7 @@ class MapController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
+        mapView.showsUserLocation = true
         
         for note in notes {
             if note.actualLocation != nil{
@@ -40,6 +41,15 @@ class MapController: UIViewController {
 
 extension MapController: MKMapViewDelegate{
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?{
+        
+        if annotation is MKUserLocation{
+            DispatchQueue.main.async {
+                mapView.setCenter(annotation.coordinate, animated: true)
+            }
+            
+            return nil
+        }
+        
         let pin = MKPinAnnotationView(annotation: annotation, reuseIdentifier: nil)
         
         pin.animatesDrop = true
