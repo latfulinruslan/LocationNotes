@@ -22,6 +22,7 @@
 		4416B8B2219EC001007219AC /* Folder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4416B8AA219EC001007219AC /* Folder+CoreDataProperties.swift */; };
 		4416B8B5219EC101007219AC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4416B8B4219EC101007219AC /* CoreDataManager.swift */; };
 		442E27F221ADD96C0004AC03 /* SelectFolderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442E27F121ADD96C0004AC03 /* SelectFolderController.swift */; };
+		4450CD0321BAAB8B00DD015F /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4450CD0221BAAB8B00DD015F /* MapController.swift */; };
 		44A972C221B71EAF0025042B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A972C121B71EAF0025042B /* LocationManager.swift */; };
 		44A972C421B72BF50025042B /* NoteMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A972C321B72BF50025042B /* NoteMapController.swift */; };
 		44D061D621A4577300BE2598 /* FoldersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D061D521A4577300BE2598 /* FoldersController.swift */; };
@@ -47,6 +48,7 @@
 		4416B8AA219EC001007219AC /* Folder+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4416B8B4219EC101007219AC /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		442E27F121ADD96C0004AC03 /* SelectFolderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFolderController.swift; sourceTree = "<group>"; };
+		4450CD0221BAAB8B00DD015F /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		44A972C121B71EAF0025042B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		44A972C321B72BF50025042B /* NoteMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteMapController.swift; sourceTree = "<group>"; };
 		44D061D521A4577300BE2598 /* FoldersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				44D061D921A4891C00BE2598 /* NoteController.swift */,
 				442E27F121ADD96C0004AC03 /* SelectFolderController.swift */,
 				44A972C321B72BF50025042B /* NoteMapController.swift */,
+				4450CD0221BAAB8B00DD015F /* MapController.swift */,
 				4416B892219EB997007219AC /* Main.storyboard */,
 				4416B898219EB999007219AC /* Assets.xcassets */,
 				4416B89A219EB999007219AC /* LaunchScreen.storyboard */,
@@ -213,6 +216,7 @@
 				442E27F221ADD96C0004AC03 /* SelectFolderController.swift in Sources */,
 				44D061DA21A4891C00BE2598 /* NoteController.swift in Sources */,
 				4416B8AE219EC001007219AC /* ImageNote+CoreDataProperties.swift in Sources */,
+				4450CD0321BAAB8B00DD015F /* MapController.swift in Sources */,
 				4416B8B0219EC001007219AC /* Note+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
