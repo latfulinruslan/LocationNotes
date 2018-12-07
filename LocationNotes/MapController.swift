@@ -19,11 +19,27 @@ class MapController: UIViewController {
         mapView.delegate = self
         mapView.showsUserLocation = true
         
-        for note in notes {
-            if note.actualLocation != nil{
-                mapView.addAnnotation(NoteAnnotation(note: note))
-            }
+        let ltgr = UILongPressGestureRecognizer(target: self, action: #selector(handleLongTap))
+        mapView.gestureRecognizers = [ltgr]
+    }
+    
+    func handleLongTap(recognizer: UIGestureRecognizer) {
+        if recognizer.state != .began {
+            return
         }
+        
+        let point = recognizer.location(in: mapView)
+        let convertLocation = mapView.convert(point, toCoordinateFrom: mapView)
+        
+        let newNote = Note.newNote(name: "", inFolder: nil)
+        newNote.actualLocation = LocationCoordinate(lat: convertLocation.latitude, lon: convertLocation.longitude)
+        
+        let noteController = storyboard?.instantiateViewController(withIdentifier: "noteSID") as! NoteController
+        noteController.note = newNote
+        
+        navigationController?.pushViewController(noteController, animated: true)
+        
+    
     }
     
     override func viewWillAppear(_ animated: Bool) {
